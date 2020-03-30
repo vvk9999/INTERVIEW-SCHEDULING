@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<style>
+    input[type=text], input[type=password], input[type=tel], input[type=number] {
+  width: 60%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+    form
+    {
+        margin-left: 30px;
+    }
+h1
+{
+    text-align: center;
+}
+.btn {
+  background-color: #ddd;
+  border: 2px;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 15px 50px; 
+}
+.btnn {
+  background-color:chartreuse;
+  border: 2px;
+  color:black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 15px 50px; 
+  width:30%;
+}
+.btnn:hover {
+  background-color:blue;
+  color: blanchedalmond;
+  }
+  .btnnn {
+  background-color:red;
+  border: 2px;
+  color:black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 15px 50px; 
+  width:30%;
+}
+.btnnn:hover {
+  background-color:blue;
+  color: blanchedalmond;
+  }
+.btn:hover {
+  background-color: #90EE90;
+  color:black;
+  }
+</style>
+<html>
+    <form action="details_job" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Admin Registration Form</h1>
+          
+          <label for="reg"><b>Registration Id</b></label><br>
+          <input class="btn" type="text" placeholder="Registration id" name="reg" required><br>
+          
+          <label for="lname"><b>Any Experience</b></label><br>
+          <input class="btn"  type="text" placeholder="Experience" name="exp" required p><br>
+      
+          <label for="age"><b>Domain-1</b></label><br>
+          <input class="btn"  type="text" placeholder="Domain-1" name="d1"  required ><br>
+          <label for="age"><b>Domain-2</b></label><br>
+         <input type="text" placeholder="Domain" name="d2" required><br><br>
+          <label for="contactnumber"><b>Contact Number</b></label><br>
+          <input class="btn"  type="tel" placeholder="Enter Contact Number" name="number" pattern="[7-9][0-9]{9}$" required><br>
+          
+        
+       
+          
+            <button class="btnn" type="submit" class="signupbtn">Apply for job</button>
+            <button class="btnnn" type="reset" >Reset</button>
+        </div>
+      </form>
+</html>

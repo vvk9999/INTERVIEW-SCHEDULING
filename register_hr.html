@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<style>
+    input[type=text], input[type=password], input[type=tel], input[type=number] {
+  width: 60%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+    form
+    {
+        margin-left: 30px;
+    }
+h1
+{
+    text-align: center;
+}
+.btn {
+  background-color: #ddd;
+  border: 2px;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 15px 50px; 
+}
+.btnn {
+  background-color:chartreuse;
+  border: 2px;
+  color:black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 15px 50px; 
+  width:30%;
+}
+.btnn:hover {
+  background-color:blue;
+  color: blanchedalmond;
+  }
+  .btnnn {
+  background-color:red;
+  border: 2px;
+  color:black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 15px 50px; 
+  width:30%;
+}
+.btnnn:hover {
+  background-color:blue;
+  color: blanchedalmond;
+  }
+.btn:hover {
+  background-color: #90EE90;
+  color:black;
+  }
+</style>
+<html>
+    <form action="register_hr" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Hr Registration Form</h1>
+          
+          <label for="fname"><b>Enter Your First Name</b></label><br>
+          <input class="btn" type="text" placeholder="Enter First Name" name="fname" required pattern="^[a-zA-Z ]*$"><br>
+          
+          <label for="lname"><b>Enter Your Last Name</b></label><br>
+          <input class="btn"  type="text" placeholder="Enter Last Name" name="lname" required pattern="^[a-zA-Z ]*$"><br>
+      
+          <label for="age"><b>Age</b></label><br>
+          <input class="btn"  type="number" placeholder="Enter Age" name="age" min=18 max=60 required ><br>
+          <label><b>Gender</b></label><br>
+         <input class="btn"  type="text" placeholder="Enter gender" name="gender" required ><br>
+          <label for="contactnumber"><b>Contact Number</b></label><br>
+          <input class="btn"  type="tel" placeholder="Enter Contact Number" name="number" pattern="[7-9][0-9]{9}$" required><br>
+          
+          <label for="adminid"><b>HR Id</b></label><br>
+          <input class="btn"  type="text" name="id" placeholder="Enter id" required pattern="^[a-zA-Z0-9_.-]*$" ><br>
+          
+          <label for="psw"><b>Password<span  style="color:red">(*Minimum eight characters, at least one uppercase letter, one lowercase letter and one number)</span></b></label><br>
+          <input class="btn"  type="password" placeholder="*******" name="psw" required><br>
+      
+          
+            <button class="btnn" type="submit" class="signupbtn">Sign Up</button>
+            <button class="btnnn" type="reset" >Reset</button>
+        </div>
+      </form>
+</html>

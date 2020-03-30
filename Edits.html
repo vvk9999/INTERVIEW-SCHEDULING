@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    input[type=text], input[type=password], input[type=tel], input[type=number] {
+  width: 60%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+    form
+    {
+        margin-left: 30px;
+    }
+h1
+{
+    text-align: center;
+}
+.btn {
+  background-color: #ddd;
+  border: 2px;
+  color: black;
+  left:4cm;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 15px 50px; 
+}
+.btnn {
+  background-color:chartreuse;
+  
+  color:black;
+  left:14cm;
+  padding: 4px 32px;
+  text-align: center;
+  align:center;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition: 0.3s;
+  border-radius: 15px 50px; 
+  width:30%;
+}
+.btnn:hover {
+  background-color:blue;
+  color: blanchedalmond;
+  }
+  .btnnn {
+  background-color:red;
+  border: 2px;
+  color:black;
+  
+  text-align: center;
+  font-size: 12px;
+ 
+  transition: 0.3s;
+  
+  width:30%;
+}
+body
+{
+background-color:skyblue}
+.btnnn:hover {
+  background-color:blue;
+  color: blanchedalmond;
+  }
+.btn:hover {
+  background-color: #90EE90;
+  color:black;
+  }
+</style>
+</head>
+<body>
+	<form method="get" action="Edits" style="border:1px solid #ccc">
+	 <div class="container">
+		<table align="center">
+			<tr><td>Employee Id</td><td><input class="btn" type="text" name="id"></td></tr>
+			<tr><td>Domain</td><td><input class="btn"  type="text" name="domain"></td></tr>
+			<tr><td>Required vacancies</td><td><input class="btn"  type="text" name="vac"></td></tr>
+			<tr><td>Closing Date</td><td><input class="btn" type="text" name="date"></td></tr> 
+				<tr><td>Priority</td><td><input  class="btn" type="text" name="priority"></td></tr> 
+				<tr><td>Minimum experience</td><td><input class="btn"  type="text" name="exp"></td></tr> 
+			   
+		</table>
+		<button class="btnn" type="submit" class="signupbtn">Add Job</button>
+	</form>
+</div>
+</body>
+</html>

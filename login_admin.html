@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+ <script src="script.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.btn {
+  padding: 10px 15px;
+  font-size: 24px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px goldenrod;
+margin-bottom:15px;
+}
+.btnn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+margin-bottom:15px;
+  font-size: 16px;
+  margin: 4px 4px;
+  transition: 0.3s;
+  border-radius: 15px 15px; 
+}
+.btnn:hover {
+  background-color:#6CACFF;
+  color: blanchedalmond;
+  }
+a {
+  color: black;
+  text-decoration:none
+}
+.btn:hover {
+  background-color: #90EE90;
+  color:black;
+  }
+
+body {
+  font-family: Arial;
+  color:black;
+}
+
+.split {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #6CACFF;
+}
+
+.right {
+  right: 0;
+  background-color:#F0F8FF;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 550px;
+  
+}
+.regis
+{
+    color: darkslateblue;
+}
+.nav-ul {
+  display:flex;
+}
+header li {
+  width: 30%;
+  margin-left: 35px;
+}
+header .nav-ul a {
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  margin-right: 105px;
+  border-radius: 15px;
+  margin-bottom:15px;
+  background-color: #4CAF50;
+  
+}
+header .nav-ul:hover
+{
+  color: #3e8e41;
+}
+
+
+</style>
+<body>
+  <header>
+    <ul class="nav-ul">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact US</a></li>
+    </ul>
+  </header>
+
+<div class="split">
+  <div class="centered">
+   <div class="jumbotron text-center">
+
+  <div>
+    
+    <strong><i><h1>Admin Login Page</h1></i></strong>
+  <div class="column">
+  </div>
+</div>
+<div class="container"> 
+  <div class="row">
+    <div class="col-md-12 text-">
+      <h3>Here We go !</h3>
+    </div>
+  </div>
+  <div class="row">
+    <form action="login_admin" method="post">
+        <strong>Admin ID:     </strong><input class="btn" type="text" name="id" placeholder="Enter Your Id" /><br/>
+        <strong>Password:     </strong><input class="btn" type="password" name="pass"  placeholder="********"/><br/>
+        <input class="btnn" type="submit" value="login" />
+        </form>
+  </div>
+  <br>
+  <br>
+  
+  <div>
+      <i>If not Register yet?<a href="register_admin.html" class="regis" ><strong>Register Now</strong></a></i>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+ 
